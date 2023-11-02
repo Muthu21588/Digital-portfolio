@@ -1,0 +1,74 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove default margin to avoid spacing issues */
+    padding: 0; /* Remove default padding */
+    background-color: #000; /* Set a background color in case the images have transparent areas */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#home {
+    position: relative; /* Make the section a relative positioning context */
+}
+
+.background-image {
+    position: relative; /* Relative positioning for the background image container */
+    width: 100%; /* Ensure the container takes the full width */
+    max-width: 100%; /* Ensure the container takes the full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.passport-photo {
+    position: absolute; /* Absolute positioning for the passport photo */
+    top: 10%; /* Adjust top position as needed */
+    left: 10%; /* Adjust left position as needed */
+    z-index: 1; /* Place it above the background image */
+}
+
+.background-image img {
+    max-width: 40%; /* Adjust the image size as needed */
+    height: 40%;
+}
+
+.passport-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Background color for sections */
+    border-radius: 10px; /* Rounded corners for sections */
+    margin: 20px; /* Add some spacing around sections */
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
